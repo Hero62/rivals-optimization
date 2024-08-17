@@ -71,7 +71,7 @@
   "DFFlagBaseNetworkMetrics": "False",
   "DFIntTaskSchedulerTargetFps": "99999",
   "FStringPartTexturePackTablePre2022": "",
-  "DFFlagDisableDPIScale": "True",
+  "DFFlagDisableDPIScale": "False",
   "FIntRakNetResendBufferArrayLength": "128",
   "FFlagOptimizeNetwork": "True",
   "FFlagOptimizeNetworkRouting": "True",
