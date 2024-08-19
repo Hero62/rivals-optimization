@@ -70,6 +70,7 @@
   "FIntRenderShadowIntensity": "0",
   "DFFlagBaseNetworkMetrics": "False",
   "DFIntTaskSchedulerTargetFps": "99999",
+  "FStringPartTexturePackTablePre2022": "",
   "DFFlagDisableDPIScale": "False",
   "FIntRakNetResendBufferArrayLength": "128",
   "FFlagOptimizeNetwork": "True",
@@ -92,19 +93,5 @@
   "FFlagDebugForceFutureIsBrightPhase2": "True",
   "FStringPartTexturePackTable2022": "",
   "DFIntRenderClampRoughnessMax": "9",
-  "DFIntDebugFRMQualityLevelOverride": "6",
-  "FIntRenderGrassDetailStrands": "0",
-  "FFlagMSRefactor5": "False",
-  "FFlagDebugSkyGray": "True",
-  "FIntFRMMaxGrassDistance": "0",
-  "FIntFontSizePadding": "4",
-  "FIntRenderShadowmapBias": "0",
-  "FFlagDisableNewIGMinDUA": "True",
-  "FFlagEnableInGameMenuControls": "True",
-  "FFlagEnableInGameMenuModernization": "True",
-  "FFlagEnableInGameMenuChrome": "True",
-  "FFlagEnableMenuControlsABTest": "False",
-  "FFlagEnableV3MenuABTest3": "False",
-  "FFlagEnableInGameMenuChromeABTest3": "False",
-  "FIntDebugTextureManagerSkipMips": "-1"
+  "DFIntDebugFRMQualityLevelOverride": "6"
 }
