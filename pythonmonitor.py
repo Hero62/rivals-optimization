@@ -19,7 +19,7 @@ def monitor_performance(process_name):
         fps = get_fps()
 
         if cpu_usage is not None:
-            print(f"CPU_USAGE={cpu_usage}%")
+            print(f"CPU_USAGE={cpu_usage}")
             print(f"FPS={fps}")
         else:
             print("CPU_USAGE=Process Not Found")
