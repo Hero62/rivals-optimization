@@ -4,8 +4,11 @@ import time
 def get_cpu_usage(process_name):
     for proc in psutil.process_iter(['name']):
         if proc.info['name'] == process_name:
-            return proc.cpu_percent(interval=1)
-    return None
+            try:
+                return proc.cpu_percent(interval=1)
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+                return 0  # Process no longer exists or can't be accessed
+    return 0
 
 def get_fps():
     start_time = time.time()
@@ -18,12 +21,8 @@ def monitor_performance(process_name):
         cpu_usage = get_cpu_usage(process_name)
         fps = get_fps()
 
-        if cpu_usage is not None:
-            print(f"CPU_USAGE={cpu_usage}")
-            print(f"FPS={fps}")
-        else:
-            print("CPU_USAGE=Process Not Found")
-            print("FPS=0")
+        print(f"CPU_USAGE={cpu_usage}")
+        print(f"FPS={fps}")
 
         time.sleep(1)  # Adjust as needed
 
